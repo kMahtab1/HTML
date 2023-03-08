@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects</title>
+</head>
+<body>
+    <div class="container">simple si html</div>
+    <script>
+        let myvar=23
+        let myvar2="string"
+        let myvar3=2.3
+        let i='str'
+        let myvar4=i
+        console.log(myvar4)
+        let myvar5=true
+        let myvar6=null
+        console.log(myvar6)
+        let employee={
+            name:"harry",
+            channel1:"kerry",
+            "channel 2":"serry"//we cannot write simply channel 2 we have to use inverted commas in case of variables with space
+        }
+        console.log(employee)
+        // let names=[1,2,4,"harry",undefined];
+        // console.log(names)
+        let names= new Array(41,2,4,"harry",undefined)
+        console.log(names)
+        console.log(names.length)
+        // names=names.sort();
+        // console.log(names)
+        names.push("this is pushed")
+        console.log(names.sort());
+        let n=new Array(23) //array of length 23
+        // let n=new Array(32,43) //array of length 2
+        console.log(n)
+        
+
+
+    </script>
+</body>
+</html>

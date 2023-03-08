@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+</head>
+<style>
+    .container{
+        display: flex;
+
+    }
+    .card{
+        padding: 23px 12px;
+        margin: 23px 12px;
+        border: 2px solid red;
+        background-color: grey;
+        /* box-shadow: offset-x offset-y color; */
+        /* box-shadow: offset-x offset-y blur-radius color; */
+        /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+        /* box-shadow: 10px 13px green; */
+        /* box-shadow: -10px -13px green; */
+        /* box-shadow: 10px 13px 8px green; */
+        /* box-shadow: -7px -5px 20px 34px rgba(156, 123, 174, .5); */
+        /* box-shadow: inset 3px 5px green; */
+        box-shadow: inset 3px 5px green, 3px 5px red;
+
+    }
+    .card h2{
+        text-shadow: 2px 1px 6px white;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+             <h2>Card1</h2>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis dolorem, ut ratione earum quas libero veniam tenetur ab. Rem ducimus architecto fugit totam quia accusamus, eligendi esse, laborum provident debitis officiis blanditiis vitae fugiat!</p>
+            </div>
+        <div class="card" id="card-2">
+            <h2>Card2</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat accusantium pariatur facilis perspiciatis aspernatur tenetur rerum cupiditate, ducimus magni explicabo voluptas est nostrum perferendis nihil necessitatibus quibusdam sed ea cum repellendus expedita nam autem?</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>Card3</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt a quaerat, natus aperiam deleniti debitis? Saepe velit quam ipsum qui cumque assumenda inventore sit blanditiis temporibus. Excepturi ea ex quibusdam beatae dolor hic ipsa?</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>math object</title>
+</head>
+<body>
+    <div class="container">
+        <h1>this is math object tutorial</h1>
+    </div>
+    <script>
+        //printing math object
+        let m=Math;
+        console.log(m);
+        //printing the constants from math object
+        console.log("value of Math.E is ",Math.E);
+        console.log("value of Math.PI is ",Math.PI);
+        console.log("value of Math.LN2 IS ",Math.LN2);
+        console.log("value of Math.SQRT1_2 IS ",Math.SQRT1_2);
+        console.log("value of Math.LOGZE is ",Math.LOGZE);
+
+        //printing the function from math object
+        let a=34.54635;
+        let b=89;
+        console.log("value of a and b is",a,b);
+        console.log("value of a and b rounded is ",Math.round(a),Math.round(b));
+        console.log("3 raised to the power of 2 is",Math.pow(3,2));
+        console.log(Math.sqrt(36));
+        console.log("5.8 rounded up ",Math.ceil(5.8));
+        console.log("5.8 rounded down ",Math.floor(5.8));
+        console.log(Math.abs(5.66));
+        console.log(Math.abs(-5.66));
+        console.log(Math.sin(Math.PI/2));
+        console.log(Math.tan(Math.PI/2));
+
+        let r=Math.random();
+        console.log("the random number is",r);
+
+        //for random number b/w (a,b)=a+(b-a)*Math.random()
+        let a1=1;
+        let b1=100;
+        let r1_100=a1+(b1-a1)*Math.random();
+        console.log("the random number is",r1_100);
+
+    </script>
+</body>
+</html>

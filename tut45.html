@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid + media queries</title>
+</head>
+<style>
+    .cotainer{
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+'navbar navbar navbar navbar'
+'section section section aside'
+'footer footer footer footer';
+    }
+    @media only screen and (max-width:300px){
+        body{
+            background-color: red;
+        }
+        .cotainer{
+        grid-template-areas:
+'navbar navbar navbar navbar'
+'section section section aside'
+'footer footer footer footer';
+    }
+        aside{
+            display: none;
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
+    }
+    @media only screen and (min-width:300px)and (max-width:500px){
+        body{
+            background-color: blue;
+        }
+        .cotainer{
+        grid-template-areas:
+'navbar navbar navbar navbar'
+'section section section section'
+'aside aside aside aside '
+'footer footer footer footer';
+    }
+    aside{
+        display: none;
+    }
+    }
+    @media (min-width:500px)and (max-width:800px){
+        body{
+            background-color: yellow;
+    }
+    .cotainer{
+        grid-template-areas:
+'navbar navbar navbar navbar'
+'section section section section'
+'aside aside aside aside'
+'footer footer footer footer';
+    
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
+    }
+    @media (min-width:800px){
+        body{
+            background-color: green;
+        }
+    }
+    
+    .bdr{
+        border: 2px solid black;
+        padding:10px 23px;
+        background-color: wheat;
+    }
+    nav{
+        grid-area: navbar;
+    }
+    section
+    {
+grid-area: section;
+
+    }
+    aside{
+        grid-area: aside;
+    }
+    footer{
+        grid-area: footer;
+        text-align: center;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>home</span> 
+            <span>about</span>
+            <span>services</span>
+            <span>contact</span>
+        </nav>
+        
+        <section class="bdr">
+            <h2>learn css in hindi</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ratione quos delectus deserunt reiciendis voluptatibus explicabo quisquam quam maiores, iusto quod. Laboriosam eligendi repellendus ullam soluta molestias facilis iste nostrum temporibus expedita corrupti laborum ea commodi facere repellat eaque, sed dignissimos minima unde voluptate ipsa perspiciatis libero nisi eos. Quia facilis adipisci voluptatibus numquam corporis quod voluptate, reprehenderit esse eum sapiente! Harum, sit? Explicabo hic sit pariatur unde sed sapiente minus, cum, optio, molestiae necessitatibus culpa totam nulla? Reprehenderit, iusto modi officiis odit quae ea corporis! Recusandae corporis soluta totam vitae, perspiciatis consectetur et esse dolore laudantium rerum atque iusto. Recusandae quasi odio, illum libero adipisci minima architecto iure aspernatur esse enim eveniet fugiat doloribus neque animi porro. Eveniet, laudantium?</p>
+        </section>
+        <aside class="bdr">
+            <h1>more about us</h1>
+        </aside>
+    </div>
+    <footer class="bdr">copyright code withkhan 2022</footer>
+</body>
+</html>
